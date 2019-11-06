@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
 	
 	s.frameworks = 'ImageIO', 'CoreGraphics', 'Foundation'
 	s.dependency 'EFFoundation', '>= 1.1.1'
+        s.dependency 'swift_qrcodejs', '>= 1.1.2'
 	
 	s.default_subspec = 'Core'
 
@@ -35,7 +36,5 @@ Pod::Spec.new do |s|
 
   	s.subspec 'watchOS' do |watchos|
   		watchos.watchos.deployment_target = '6.0'
-
-  		watchos.dependency 'swift_qrcodejs', '>= 1.1.2'
   	end
 end
